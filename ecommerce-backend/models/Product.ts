@@ -14,7 +14,12 @@ const productSchema = new Schema<IProduct>(
     price: {
       type: Number,
       required: true
-    }
+    },
+    images: [
+      {
+        type: String
+      }
+    ]
   },
   {
     timestamps: true,
